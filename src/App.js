@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import PostInApiWithAxios from "./components/PostInApi/PostInApiWithAxios";
+import PostInApiWithfetch from "./components/PostInApi/PostInApiWithfetch";
+import FetchApiWithFetch from "./components/FetchInApi/FetchApiWithFetch";
+import FetchInApiWithAxios from "./components/FetchInApi/FetchInApiWithAxios";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostInApiWithAxios />
+      <PostInApiWithfetch />
+      <FetchApiWithFetch />
+      <FetchInApiWithAxios />
     </div>
   );
 }
